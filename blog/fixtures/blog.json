@@ -1,0 +1,263 @@
+[
+{
+  "model": "blog.category",
+  "pk": 11,
+  "fields": {
+    "name": "Python",
+    "slug": "python"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 12,
+  "fields": {
+    "name": "HTML",
+    "slug": "html"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 13,
+  "fields": {
+    "name": "CSS",
+    "slug": "css"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 14,
+  "fields": {
+    "name": "PHP",
+    "slug": "php"
+  }
+},
+{
+  "model": "blog.category",
+  "pk": 15,
+  "fields": {
+    "name": "JavaScript",
+    "slug": "javascript"
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 10,
+  "fields": {
+    "category": 11,
+    "titel": "Flask",
+    "slug": "1",
+    "image": "images/flask_gbTVpsW.png",
+    "description": "flask",
+    "details": "flask est un framwork python",
+    "create": "2023-07-21T02:54:11.140Z",
+    "update": "2023-08-07T17:28:16.712Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 5
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 11,
+  "fields": {
+    "category": 11,
+    "titel": "Django/python",
+    "slug": "1",
+    "image": "images/django_VifrFyC.png",
+    "description": "Django/framwork",
+    "details": "Django est un framwork python très puissant avec une très grande communauté",
+    "create": "2023-07-21T02:57:06.097Z",
+    "update": "2023-08-07T18:01:30.166Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 5
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 12,
+  "fields": {
+    "category": 12,
+    "titel": "Html",
+    "slug": "1",
+    "image": "images/pngwing.com_8.png",
+    "description": "html",
+    "details": "html est un langage de balisage très utilisé dans le monde du développement web",
+    "create": "2023-07-21T02:59:58.213Z",
+    "update": "2023-08-07T17:25:55.932Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 1
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 13,
+  "fields": {
+    "category": 13,
+    "titel": "Tailwind",
+    "slug": "1",
+    "image": "images/tailwind_g9bvjaT.png",
+    "description": "telwine",
+    "details": "Tailwind est un framwork css .............",
+    "create": "2023-07-21T03:01:38.574Z",
+    "update": "2023-08-07T17:25:21.825Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 1
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 14,
+  "fields": {
+    "category": 13,
+    "titel": "Bootstrap 5",
+    "slug": "1",
+    "image": "images/bootstrap_AaSaeN4.png",
+    "description": "bootstrap 5",
+    "details": "Bootstrap 5 est un framwork html css très populaire",
+    "create": "2023-07-21T03:04:07.671Z",
+    "update": "2023-08-07T17:25:43.692Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 1
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 15,
+  "fields": {
+    "category": 14,
+    "titel": "Laravel",
+    "slug": "1",
+    "image": "images/laravel_Pz6YB4L.png",
+    "description": "laravel",
+    "details": "Laravel est framwork php super puissant et accessible.....",
+    "create": "2023-07-21T03:06:13.830Z",
+    "update": "2023-08-07T17:27:21.479Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 5
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 16,
+  "fields": {
+    "category": 15,
+    "titel": "Angular",
+    "slug": "1",
+    "image": "images/angular_9w3eADe.png",
+    "description": "angular",
+    "details": "Angular est un framwork JavaScript.....",
+    "create": "2023-07-21T03:17:55.981Z",
+    "update": "2023-08-07T17:28:33.017Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 6
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 17,
+  "fields": {
+    "category": 15,
+    "titel": "Reactjs",
+    "slug": "1",
+    "image": "images/react_nGrDXod.png",
+    "description": "reactjs",
+    "details": "React est un framwork JavaScript...........",
+    "create": "2023-07-21T03:19:19.296Z",
+    "update": "2023-08-07T17:29:57.421Z",
+    "status": "published",
+    "publish": "2023-07-21",
+    "autors": 6
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 18,
+  "fields": {
+    "category": 12,
+    "titel": "Bootstrap 5",
+    "slug": "1",
+    "image": "images/bootstrap_d7AoQn9.png",
+    "description": "bootstrap 5",
+    "details": "Bootstrap est un framwork html et css....",
+    "create": "2023-07-22T13:40:11.198Z",
+    "update": "2023-08-07T17:29:18.056Z",
+    "status": "published",
+    "publish": "2023-07-22",
+    "autors": 8
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 19,
+  "fields": {
+    "category": 13,
+    "titel": "Le Langage CSS",
+    "slug": "1",
+    "image": "images/css_n69UUOn.png",
+    "description": "Le Langage css",
+    "details": "Le langage CSS est un langage de mise en forme et de design...........",
+    "create": "2023-07-22T13:43:00.233Z",
+    "update": "2023-08-07T17:28:50.813Z",
+    "status": "published",
+    "publish": "2023-07-22",
+    "autors": 7
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 20,
+  "fields": {
+    "category": 14,
+    "titel": "Le Langage PHP",
+    "slug": "1",
+    "image": "images/php_MoOC40A.png",
+    "description": "Le langage de programmation php",
+    "details": "PHP est utilise dans la programmation web en backend surtout.......",
+    "create": "2023-07-22T13:56:35.806Z",
+    "update": "2023-08-07T17:27:43.883Z",
+    "status": "published",
+    "publish": "2023-07-22",
+    "autors": 5
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 21,
+  "fields": {
+    "category": 15,
+    "titel": "React native",
+    "slug": "react-native",
+    "image": "images/react_vHNXdcW.png",
+    "description": "React native",
+    "details": "React native React native React nativeReact native",
+    "create": "2023-08-07T14:13:26.191Z",
+    "update": "2023-08-07T17:26:13.074Z",
+    "status": "published",
+    "publish": "2023-08-07",
+    "autors": 1
+  }
+},
+{
+  "model": "blog.article",
+  "pk": 22,
+  "fields": {
+    "category": 13,
+    "titel": "UI/UX Design",
+    "slug": "uiux-design",
+    "image": "",
+    "description": "",
+    "details": "UI/UX Design UI/UX DesignUI/UX Design",
+    "create": "2023-08-07T17:47:12.903Z",
+    "update": "2023-08-07T17:47:12.903Z",
+    "status": "draft",
+    "publish": "2023-08-07",
+    "autors": 1
+  }
+}
+]

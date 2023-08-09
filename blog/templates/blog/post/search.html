@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container column">
+       {% if query %}
+            <h1>
+                Posts Containing "{{ query }}"
+            </h1>
+            <h3>
+
+                {% with results.count as total_results %}
+                     Found {{ total_results }} result{{ total_results|pluralize }}
+               
+                {% endwith %}
+
+            </h3>
+
+        {% for article in  results %}
+            <div class="d-flex">
+                <div class"car mb-4 col-md-6">
+                    <div class="card-body">
+                        <div class="small text-muted"> {{article.publish}}</div>
+                        <h2 class="card-title h4">{{article.titel}}</h2>
+                        <p class="card-text">{{article.description|truncatechars:50}}</p>
+                        <p class="card-text">{{article.details}}</p>
+                        <p class="card-text">Creer:{{article.create}}</p>
+                        <p class="card-text">Publier: <i>{{article.update}} </i></p>
+                        <a class="btn btn-primary" href="{{ article.get_absolute_url }}">Read more →</a>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+                <p>Aucun result pour {{'query'}}.</p>
+        {% endfor %}
+            <p><a href="{% url 'post_search' %}">Search again</a></p>
+    {% else %}
+        
+            <h1> Search for posts</h1>
+            {% csrf_token %}
+            <form method="get">
+                {{ search_form.as_p}}
+                <input type="submit" value="Search">
+            </form>
+        {% endif %}
+
+    </div>
+{% endblock content %}
