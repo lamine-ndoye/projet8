@@ -33,11 +33,11 @@
                     <a class="badge bg-secondary text-decoration-none link-light" href="#!">Freebies</a> {% endcomment %}
                 </header>
                 <!-- Preview image figure-->
-                {% if article.image %}
+                {% comment %} {% if article.image %}
                     <a href="{{ post.get_absolute_url }}"><img class="card-img-top" src="{{ article.image.url }}" alt="..." /></a>
                     {% else %}
                     <h4>Non image</h4>
-                 {% endif %}
+                 {% endif %} {% endcomment %}
                 {% comment %} <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure> {% endcomment %}
                 <!-- Post content-->
                 <section class="mb-5">

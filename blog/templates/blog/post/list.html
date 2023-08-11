@@ -49,8 +49,8 @@
                                 <div class="card-body">
                                     <div class="small text-muted"> {{article.publish}}</div>
                                     <h2 class="card-title h4">{{article.titel}}</h2>
-                                    <p class="card-text">{{article.description|safe|truncatechars:50}}</p>
-                                    <p class="card-text">{{article.details}}</p>
+                                    <p class="card-text">{{article.description|truncatechars:50|safe}}</p>
+                                    {% comment %} <p class="card-text">{{article.details}}</p> {% endcomment %}
                                     <p class="card-text">Creer:{{article.create}}</p>
                                     <p class="card-text">Publier: <i>{{article.update}} </i></p>
                                     <a class="btn btn-primary" href="{{ article.get_absolute_url }}">Read more →</a>
