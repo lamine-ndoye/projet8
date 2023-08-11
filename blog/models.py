@@ -8,9 +8,6 @@ from django.urls import reverse
 
 from django.utils.text import slugify
 
-
-from ckeditor.fields import RichTextField
-
 # Create your models here.
 
 class PublishedManager(models.Manager):
@@ -40,7 +37,7 @@ class article(models.Model):
     slug = models.SlugField(max_length=250)
     image = models.ImageField(upload_to= 'images',blank=True)
     description = models.CharField(max_length=255)
-    details = RichTextField()
+    details = models.CharField()
     create = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField(auto_now=True)
     status = models.CharField(choices=STATUS_CHOICES,default='draft',max_length=10)
